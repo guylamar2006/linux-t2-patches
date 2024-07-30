@@ -1266,7 +1266,7 @@ index 000000000..bd16ddd16
 +        result = PTR_ERR(aaudio_class);
 +        goto fail_class;
 +    }
-+    
++
 +    result = pci_register_driver(&aaudio_pci_driver);
 +    if (result)
 +        goto fail_drv;
@@ -5850,6 +5850,5 @@ index 000000000..6c2e22622
 +struct bce_vhci *bce_vhci_from_hcd(struct usb_hcd *hcd);
 +
 +#endif //BCE_VHCI_H
--- 
+--
 2.45.2
-
